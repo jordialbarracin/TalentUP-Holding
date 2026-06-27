@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowRight, Users, TrendingUp, Target, Newspaper, Layers, CheckCircle2, ChevronRight, PlayCircle } from 'lucide-react';
+import Logo from './components/ui/Logo';
 
 function App() {
   return (
@@ -15,11 +16,8 @@ function App() {
       {/* Premium Navbar */}
       <nav className="fixed top-0 w-full z-50 glass border-b-0 border-white/40">
         <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-          <div className="flex items-center gap-3 cursor-pointer group">
-            <div className="w-10 h-10 rounded-xl bg-slate-900 flex items-center justify-center shadow-lg group-hover:scale-105 transition-transform">
-              <Layers className="text-white" size={20} />
-            </div>
-            <span className="text-2xl font-extrabold text-slate-900 tracking-tight">TalentUP</span>
+          <div className="flex items-center gap-3 cursor-pointer group hover:scale-105 transition-transform">
+             <Logo appName="" className="text-2xl" />
           </div>
           <div className="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-500">
              <a href="#ecosistema" className="hover:text-slate-900 transition-colors">Ecosistema</a>
@@ -215,10 +213,7 @@ function App() {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
              <div className="md:col-span-2">
                <div className="flex items-center gap-3 mb-6">
-                 <div className="w-10 h-10 rounded-xl bg-slate-900 flex items-center justify-center shadow-md">
-                   <Layers className="text-white" size={20} />
-                 </div>
-                 <span className="text-2xl font-extrabold text-slate-900 tracking-tight">TalentUP</span>
+                 <Logo appName="" className="text-2xl" />
                </div>
                <p className="text-slate-500 text-lg max-w-sm leading-relaxed">El sistema operativo definitivo para escalar empresas modernas. Todo integrado, cero burocracia.</p>
              </div>
