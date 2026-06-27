@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-slate-50 text-slate-900 font-sans antialiased selection:bg-brand-500/20;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-slate-300 rounded-full;
+}
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-slate-400;
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-white/70 backdrop-blur-xl border border-white/50 shadow-glass;
+  }
+  .bento-card {
+    @apply bg-white/90 backdrop-blur-md rounded-2xl border border-white/50 shadow-bento relative overflow-hidden transition-all duration-300;
+  }
+  .bento-hover {
+    @apply hover:-translate-y-1 hover:shadow-bento-hover;
+  }
+  .up-orb {
+    @apply absolute rounded-full mix-blend-multiply filter blur-[80px] opacity-60 animate-pulse-slow pointer-events-none;
+  }
+}
