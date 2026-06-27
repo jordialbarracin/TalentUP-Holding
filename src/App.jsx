@@ -194,7 +194,7 @@ function App() {
                <p className="text-slate-500 text-lg mb-8 max-w-md leading-relaxed">
                  La actualidad y reportes de inteligencia artificial aplicada al sector de los recursos humanos. Decisiones estratégicas basadas en datos de mercado.
                </p>
-               <a href="https://jordialbarracin.github.io/TalentUP/" target="_blank" rel="noreferrer" className="inline-flex items-center justify-center gap-2 h-14 px-8 rounded-2xl font-bold text-lg bg-news text-white hover:bg-news-dark transition-all shadow-xl shadow-news/20 hover:-translate-y-1 hover:shadow-2xl">
+               <a href="https://jordialbarracin.github.io/TalentUP-News/" target="_blank" rel="noreferrer" className="inline-flex items-center justify-center gap-2 h-14 px-8 rounded-2xl font-bold text-lg bg-news text-white hover:bg-news-dark transition-all shadow-xl shadow-news/20 hover:-translate-y-1 hover:shadow-2xl">
                  Leer Publicaciones <ChevronRight size={20} />
                </a>
             </div>
@@ -223,7 +223,7 @@ function App() {
                    <li><a href="https://talent-up-hr.vercel.app" className="hover:text-hr transition-colors">TalentUP HR</a></li>
                    <li><a href="#" className="hover:text-crm transition-colors flex items-center gap-2">TalentUP CRM <span className="text-[10px] bg-slate-100 text-slate-400 px-2 py-0.5 rounded-full font-bold">PRONTO</span></a></li>
                    <li><a href="#" className="hover:text-ats transition-colors flex items-center gap-2">TalentUP ATS <span className="text-[10px] bg-slate-100 text-slate-400 px-2 py-0.5 rounded-full font-bold">PRONTO</span></a></li>
-                   <li><a href="https://jordialbarracin.github.io/TalentUP/" className="hover:text-news transition-colors">TalentUP News</a></li>
+                   <li><a href="https://jordialbarracin.github.io/TalentUP-News/" className="hover:text-news transition-colors">TalentUP News</a></li>
                 </ul>
              </div>
              <div>
