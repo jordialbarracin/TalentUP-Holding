@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowRight, Users, TrendingUp, Target, Newspaper, Layers, CheckCircle2, ChevronRight, PlayCircle, BarChart3, Briefcase, Activity } from 'lucide-react';
+import { BrowserRouter, Link } from 'react-router-dom';
 import Logo from './components/ui/Logo';
 import AppSwitcher from './components/ui/AppSwitcher';
 
@@ -18,16 +19,16 @@ function App() {
       <nav className="fixed top-6 w-full z-50 transition-all duration-300">
         <div className="max-w-7xl mx-auto px-6">
           <div className="bg-white/80 backdrop-blur-xl border border-slate-200/60 rounded-full h-20 flex items-center justify-between px-6 shadow-sm">
-            <div className="flex items-center gap-3 cursor-pointer group hover:scale-105 transition-transform">
+            <Link to="/" className="cursor-pointer hover:scale-105 transition-transform inline-block">
                <Logo appName="" className="text-2xl" />
-            </div>
-            <div className="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-500">
-               <a href="#ecosistema" className="hover:text-slate-900 transition-colors">Productos</a>
-               <a href="https://talent-up-news.vercel.app" className="hover:text-slate-900 transition-colors">Noticias</a>
-            </div>
-            <div className="flex items-center gap-4">
+            </Link>
+            <div className="flex items-center gap-6">
               <AppSwitcher />
-              <a href="https://talent-up-hr.vercel.app" className="hidden md:flex bg-slate-900 text-white px-6 py-2.5 rounded-full text-sm font-bold hover:bg-slate-800 transition-all shadow-xl shadow-slate-900/20 hover:-translate-y-0.5">
+              <div className="hidden md:flex items-center gap-6 text-[15px] font-bold text-slate-600">
+                 <a href="#ecosistema" className="hover:text-brand-600 transition-colors">Productos</a>
+                 <a href="https://talent-up-news.vercel.app" className="hover:text-brand-600 transition-colors">Noticias</a>
+              </div>
+              <a href="https://talent-up-hr.vercel.app" className="hidden sm:flex items-center justify-center bg-slate-900 hover:bg-slate-800 text-white shadow-xl shadow-slate-900/20 font-bold h-11 px-8 rounded-full transition-all hover:-translate-y-0.5 hover:shadow-2xl">
                 Probar Gratis
               </a>
             </div>
@@ -188,6 +189,10 @@ function App() {
   );
 }
 
-
-
-export default App;
+export default function AppWrapper() {
+  return (
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  );
+}
