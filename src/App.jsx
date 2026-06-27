@@ -62,7 +62,7 @@ function App() {
             <p className="text-slate-500 mb-6 max-w-md relative z-10">
               Gestión de ausencias, control horario, desempeño y portal del empleado. Todo lo que tu equipo necesita en un solo lugar.
             </p>
-            <a href="http://localhost:5173" target="_blank" className="inline-flex items-center gap-2 text-sm font-bold text-hr hover:text-hr-dark transition-colors relative z-10">
+            <a href="https://talent-up-hr.vercel.app" target="_blank" className="inline-flex items-center gap-2 text-sm font-bold text-hr hover:text-hr-dark transition-colors relative z-10">
               Explorar producto <ArrowRight size={16} />
             </a>
             
