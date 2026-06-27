@@ -22,15 +22,14 @@ function App() {
                <Logo appName="" className="text-2xl" />
             </div>
             <div className="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-500">
-               <a href="#ecosistema" className="hover:text-slate-900 transition-colors">Ecosistema</a>
-               <a href="#vision" className="hover:text-slate-900 transition-colors">Nuestra Visión</a>
-               <a href="#contacto" className="hover:text-slate-900 transition-colors">Compañía</a>
+               <a href="#ecosistema" className="hover:text-slate-900 transition-colors">Productos</a>
+               <a href="https://talent-up-news.vercel.app" className="hover:text-slate-900 transition-colors">Noticias</a>
             </div>
             <div className="flex items-center gap-4">
               <AppSwitcher />
-              <button className="hidden md:block bg-slate-900 text-white px-6 py-2.5 rounded-full text-sm font-bold hover:bg-slate-800 transition-all shadow-xl shadow-slate-900/20 hover:-translate-y-0.5">
-                Solicitar Demo
-              </button>
+              <a href="https://talent-up-hr.vercel.app" className="hidden md:flex bg-slate-900 text-white px-6 py-2.5 rounded-full text-sm font-bold hover:bg-slate-800 transition-all shadow-xl shadow-slate-900/20 hover:-translate-y-0.5">
+                Probar Gratis
+              </a>
             </div>
           </div>
         </div>
