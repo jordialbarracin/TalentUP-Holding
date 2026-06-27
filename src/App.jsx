@@ -38,28 +38,23 @@ function App() {
 
       {/* Hero Section */}
       <main className="relative z-10 pt-40 pb-32 px-6 max-w-7xl mx-auto">
-        <div className="text-center max-w-4xl mx-auto mb-24">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/60 border border-slate-200/60 shadow-sm backdrop-blur-md mb-8 hover:scale-105 transition-transform cursor-pointer">
-            <span className="flex h-2 w-2 rounded-full bg-emerald-500 animate-pulse"></span>
-            <span className="text-sm font-bold text-slate-700 tracking-tight">Ecosistema B2B Enterprise v2.0</span>
+        <div className="text-center max-w-4xl mx-auto mb-20">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/60 border border-slate-200/60 shadow-sm backdrop-blur-md mb-8">
+            <span className="flex h-2 w-2 rounded-full bg-brand-500"></span>
+            <span className="text-sm font-bold text-slate-700 tracking-tight">TalentUP Holding</span>
           </div>
           <h1 className="text-6xl md:text-[84px] font-black tracking-tighter text-slate-900 mb-8 leading-[1.05]">
-            El sistema operativo para tu <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#4F46E5] via-[#3b82f6] to-[#0284c7]">crecimiento.</span>
+            Innovación en software para <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#4F46E5] via-[#3b82f6] to-[#0284c7]">empresas.</span>
           </h1>
-          <p className="text-xl md:text-2xl text-slate-500 mb-12 leading-relaxed max-w-3xl mx-auto font-medium">
-            TalentUP unifica la gestión avanzada de Recursos Humanos y la inteligencia sectorial en un ecosistema integrado, diseñado obsesivamente para la productividad.
+          <p className="text-xl md:text-2xl text-slate-500 leading-relaxed max-w-3xl mx-auto font-medium">
+            Descubre nuestra suite de aplicaciones especializadas. Construimos soluciones independientes enfocadas en transformar la gestión del talento, las ventas y la información en el entorno corporativo.
           </p>
         </div>
 
-        {/* Realistic Ecosystem Mockup */}
-        <div className="relative max-w-6xl mx-auto mb-40 z-10 [perspective:2000px]">
-           <EcosystemMockup />
-        </div>
-
         {/* Ecosystem Bento Grid */}
-        <div id="ecosistema" className="text-center max-w-3xl mx-auto mb-16 pt-10">
-          <h2 className="text-4xl font-black text-slate-900 tracking-tight mb-4">Todo conectado. Sin fricción.</h2>
-          <p className="text-xl text-slate-500">Un módulo para cada área de tu empresa, diseñados para hablar el mismo idioma.</p>
+        <div id="ecosistema" className="text-center max-w-3xl mx-auto mb-16">
+          <h2 className="text-4xl font-black text-slate-900 tracking-tight mb-4">Nuestros Productos</h2>
+          <p className="text-xl text-slate-500">Aplicaciones especializadas para cada área de tu empresa.</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
@@ -194,129 +189,6 @@ function App() {
   );
 }
 
-function EcosystemMockup() {
-  return (
-    <div className="relative rounded-[2rem] overflow-hidden border border-slate-200/60 bg-[#FAFAFA] shadow-[0_20px_50px_-12px_rgba(0,0,0,0.15)] flex flex-col w-full [transform:rotateX(12deg)] hover:[transform:rotateX(0deg)] transition-transform duration-1000 ease-out hover:shadow-[0_40px_80px_-20px_rgba(0,0,0,0.1)] select-none [transform-style:preserve-3d]">
-       
-       {/* Window Header */}
-       <div className="h-12 border-b border-slate-200/60 bg-white flex items-center px-4 gap-2 z-20">
-          <div className="flex gap-2">
-             <div className="w-3 h-3 rounded-full bg-slate-300"></div>
-             <div className="w-3 h-3 rounded-full bg-slate-300"></div>
-             <div className="w-3 h-3 rounded-full bg-slate-300"></div>
-          </div>
-          <div className="mx-auto w-64 h-7 bg-slate-50 rounded-md border border-slate-200/50 flex items-center justify-center shadow-inner">
-             <span className="text-[10px] text-slate-400 font-semibold tracking-wide">talentup.com/workspace</span>
-          </div>
-          <div className="w-12"></div>
-       </div>
-       
-       {/* App Body */}
-       <div className="flex flex-1 overflow-hidden h-[500px]">
-          
-          {/* Sidebar */}
-          <div className="w-56 bg-white border-r border-slate-200/60 p-4 flex flex-col gap-2 z-10">
-             <div className="h-8 w-32 bg-slate-100 rounded mb-6"></div>
-             <div className="flex items-center gap-3 px-3 py-2.5 bg-slate-900 text-white rounded-xl shadow-sm">
-                <BarChart3 size={16} className="shrink-0" />
-                <span className="text-sm font-bold">Panel Principal</span>
-             </div>
-             <div className="flex items-center gap-3 px-3 py-2 text-slate-500 hover:bg-slate-50 rounded-lg transition-colors mt-2">
-                <Users size={16} className="shrink-0 text-[#4F46E5]" />
-                <span className="text-sm font-semibold">TalentUP HR</span>
-             </div>
-             <div className="flex items-center gap-3 px-3 py-2 text-slate-500 hover:bg-slate-50 rounded-lg transition-colors">
-                <Newspaper size={16} className="shrink-0 text-[#3b82f6]" />
-                <span className="text-sm font-semibold">TalentUP News</span>
-             </div>
-          </div>
 
-          {/* Main Content Area */}
-          <div className="flex-1 p-6 bg-[#FAFAFA] overflow-hidden flex flex-col gap-6">
-            
-            {/* Top KPIs */}
-            <div className="grid grid-cols-3 gap-6">
-               <div className="bg-white rounded-2xl border border-slate-200/60 shadow-sm p-5 flex flex-col relative overflow-hidden">
-                  <div className="absolute top-0 right-0 w-16 h-16 bg-[#4F46E5]/10 rounded-bl-[2rem] flex items-start justify-end p-3"><Users size={18} className="text-[#4F46E5]"/></div>
-                  <h4 className="text-[11px] font-bold text-slate-500 uppercase tracking-widest mb-1">Plantilla Activa</h4>
-                  <span className="text-3xl font-black text-slate-800">142</span>
-                  <span className="text-xs font-bold text-emerald-500 mt-2 flex items-center gap-1">+4 incorporaciones este mes</span>
-               </div>
-               
-               <div className="bg-white rounded-2xl border border-slate-200/60 shadow-sm p-5 flex flex-col relative overflow-hidden">
-                  <div className="absolute top-0 right-0 w-16 h-16 bg-slate-100 rounded-bl-[2rem] flex items-start justify-end p-3"><Activity size={18} className="text-slate-500"/></div>
-                  <h4 className="text-[11px] font-bold text-slate-500 uppercase tracking-widest mb-1">Fichajes de hoy</h4>
-                  <span className="text-3xl font-black text-slate-800">128</span>
-                  <span className="text-xs font-bold text-slate-400 mt-2 flex items-center gap-1">14 ausencias registradas</span>
-               </div>
-
-               <div className="bg-white rounded-2xl border border-slate-200/60 shadow-sm p-5 flex flex-col relative overflow-hidden">
-                  <div className="absolute top-0 right-0 w-16 h-16 bg-[#3b82f6]/10 rounded-bl-[2rem] flex items-start justify-end p-3"><Newspaper size={18} className="text-[#3b82f6]"/></div>
-                  <h4 className="text-[11px] font-bold text-slate-500 uppercase tracking-widest mb-1">Impacto de News</h4>
-                  <span className="text-3xl font-black text-slate-800">2.4k</span>
-                  <span className="text-xs font-bold text-emerald-500 mt-2 flex items-center gap-1">Lecturas esta semana</span>
-               </div>
-            </div>
-
-            {/* Bottom Section */}
-            <div className="flex-1 flex gap-6">
-               
-               {/* Cross-Module Activity */}
-               <div className="flex-[1.5] bg-white rounded-2xl border border-slate-200/60 shadow-sm flex flex-col">
-                  <div className="px-5 py-4 border-b border-slate-100 flex items-center gap-2">
-                     <Activity size={16} className="text-slate-400" />
-                     <h3 className="text-[11px] font-bold text-slate-800 uppercase tracking-widest">Actividad Reciente</h3>
-                  </div>
-                  <div className="p-5 flex flex-col gap-4">
-                     <div className="flex items-start gap-4">
-                        <div className="w-8 h-8 rounded-full bg-[#4F46E5]/10 flex items-center justify-center text-[#4F46E5] shrink-0 mt-0.5"><Users size={14}/></div>
-                        <div>
-                           <p className="text-[13px] font-bold text-slate-800">Vacaciones aprobadas <span className="font-normal text-slate-500">en TalentUP HR</span></p>
-                           <p className="text-[11px] text-slate-500 mt-0.5">Se han aprobado las solicitudes de María y Carlos.</p>
-                        </div>
-                        <span className="text-[10px] font-bold text-slate-400 ml-auto">Hace 5m</span>
-                     </div>
-                     <div className="flex items-start gap-4">
-                        <div className="w-8 h-8 rounded-full bg-[#3b82f6]/10 flex items-center justify-center text-[#3b82f6] shrink-0 mt-0.5"><Newspaper size={14}/></div>
-                        <div>
-                           <p className="text-[13px] font-bold text-slate-800">Nuevo artículo publicado <span className="font-normal text-slate-500">en TalentUP News</span></p>
-                           <p className="text-[11px] text-slate-500 mt-0.5">"Cómo la IA transforma la retención del talento".</p>
-                        </div>
-                        <span className="text-[10px] font-bold text-slate-400 ml-auto">Hace 1h</span>
-                     </div>
-                     <div className="flex items-start gap-4">
-                        <div className="w-8 h-8 rounded-full bg-[#4F46E5]/10 flex items-center justify-center text-[#4F46E5] shrink-0 mt-0.5"><Users size={14}/></div>
-                        <div>
-                           <p className="text-[13px] font-bold text-slate-800">Cierre de nóminas completado <span className="font-normal text-slate-500">en TalentUP HR</span></p>
-                           <p className="text-[11px] text-slate-500 mt-0.5">Resumen de ausencias y horas extra enviado al gestor.</p>
-                        </div>
-                        <span className="text-[10px] font-bold text-slate-400 ml-auto">Hace 2h</span>
-                     </div>
-                  </div>
-               </div>
-
-               {/* Growth Chart area */}
-               <div className="flex-1 bg-white rounded-2xl border border-slate-200/60 shadow-sm p-6 flex flex-col relative overflow-hidden justify-end">
-                  <div className="absolute top-6 left-6">
-                     <h4 className="text-[11px] font-bold text-slate-500 uppercase tracking-widest mb-1">Productividad de Equipo</h4>
-                     <span className="text-2xl font-black text-slate-800">92%</span>
-                  </div>
-                  <div className="flex items-end gap-3 h-32 mt-12 w-full">
-                     <div className="flex-1 bg-slate-100 rounded-t-md h-[40%] hover:bg-[#4F46E5]/20 transition-colors"></div>
-                     <div className="flex-1 bg-slate-200 rounded-t-md h-[55%] hover:bg-[#4F46E5]/20 transition-colors"></div>
-                     <div className="flex-1 bg-slate-300 rounded-t-md h-[70%] hover:bg-[#4F46E5]/40 transition-colors"></div>
-                     <div className="flex-1 bg-[#4F46E5] rounded-t-md h-[95%] relative">
-                        <div className="absolute -top-6 left-1/2 -translate-x-1/2 w-2 h-2 rounded-full bg-emerald-400 ring-2 ring-emerald-400/30 shadow-[0_0_10px_rgba(16,185,129,0.8)]"></div>
-                     </div>
-                  </div>
-               </div>
-
-            </div>
-
-          </div>
-       </div>
-    </div>
-  );
-}
 
 export default App;
