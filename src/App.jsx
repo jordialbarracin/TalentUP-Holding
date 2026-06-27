@@ -22,7 +22,7 @@ function App() {
             <Link to="/" className="cursor-pointer hover:scale-105 transition-transform inline-block">
                <Logo appName="" className="text-2xl" />
             </Link>
-            <div className="flex items-center gap-6">
+            <div className="flex items-center gap-2 sm:gap-6 ml-auto">
               <AppSwitcher />
               <div className="hidden md:flex items-center gap-6 text-[15px] font-bold text-slate-600">
                  <a href="#ecosistema" className="hover:text-brand-600 transition-colors">Productos</a>
@@ -43,7 +43,7 @@ function App() {
             <span className="flex h-2 w-2 rounded-full bg-brand-500"></span>
             <span className="text-sm font-bold text-slate-700 tracking-tight">TalentUP Holding</span>
           </div>
-          <h1 className="text-6xl md:text-[84px] font-black tracking-tighter text-slate-900 mb-8 leading-[1.05]">
+          <h1 className="text-5xl md:text-7xl lg:text-[84px] font-black tracking-tighter text-slate-900 mb-8 leading-[1.05]">
             Innovación en software para <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#4F46E5] via-[#3b82f6] to-[#0284c7]">empresas.</span>
           </h1>
           <p className="text-xl md:text-2xl text-slate-500 leading-relaxed max-w-3xl mx-auto font-medium">
