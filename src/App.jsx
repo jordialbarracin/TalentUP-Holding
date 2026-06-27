@@ -44,23 +44,15 @@ function App() {
             <span className="text-sm font-bold text-slate-700 tracking-tight">Ecosistema B2B Enterprise v2.0</span>
           </div>
           <h1 className="text-6xl md:text-[84px] font-black tracking-tighter text-slate-900 mb-8 leading-[1.05]">
-            El sistema operativo para tu <span className="text-transparent bg-clip-text bg-gradient-to-r from-hr via-crm to-brand-500">crecimiento.</span>
+            El sistema operativo para tu <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#4F46E5] via-[#3b82f6] to-[#0284c7]">crecimiento.</span>
           </h1>
           <p className="text-xl md:text-2xl text-slate-500 mb-12 leading-relaxed max-w-3xl mx-auto font-medium">
-            TalentUP unifica Recursos Humanos, Ventas, Reclutamiento e Inteligencia en una única plataforma diseñada obsesivamente para la productividad.
+            TalentUP unifica la gestión avanzada de Recursos Humanos y la inteligencia sectorial en un ecosistema integrado, diseñado obsesivamente para la productividad.
           </p>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <button className="w-full sm:w-auto h-14 px-8 bg-slate-900 hover:bg-slate-800 text-white rounded-full font-bold text-lg shadow-xl shadow-slate-900/20 transition-all flex items-center justify-center gap-2 hover:scale-105">
-              Solicitar Acceso Anticipado <ArrowRight size={20} />
-            </button>
-            <button className="w-full sm:w-auto h-14 px-8 bg-white border border-slate-200 text-slate-700 hover:bg-slate-50 rounded-full font-bold text-lg shadow-sm transition-all flex items-center justify-center gap-2 hover:scale-105">
-              <PlayCircle size={20} className="text-slate-400"/> Ver Ecosistema en Acción
-            </button>
-          </div>
         </div>
 
         {/* Realistic Ecosystem Mockup */}
-        <div className="relative max-w-6xl mx-auto mb-40 z-10 perspective-1000">
+        <div className="relative max-w-6xl mx-auto mb-40 z-10 [perspective:2000px]">
            <EcosystemMockup />
         </div>
 
@@ -204,7 +196,7 @@ function App() {
 
 function EcosystemMockup() {
   return (
-    <div className="relative rounded-[2rem] overflow-hidden border border-slate-200/60 bg-[#FAFAFA] shadow-[0_20px_50px_-12px_rgba(0,0,0,0.15)] flex flex-col w-full transform rotate-x-12 hover:rotate-x-0 transition-transform duration-1000 ease-out perspective-[2000px] hover:shadow-[0_40px_80px_-20px_rgba(0,0,0,0.1)] select-none">
+    <div className="relative rounded-[2rem] overflow-hidden border border-slate-200/60 bg-[#FAFAFA] shadow-[0_20px_50px_-12px_rgba(0,0,0,0.15)] flex flex-col w-full [transform:rotateX(12deg)] hover:[transform:rotateX(0deg)] transition-transform duration-1000 ease-out hover:shadow-[0_40px_80px_-20px_rgba(0,0,0,0.1)] select-none [transform-style:preserve-3d]">
        
        {/* Window Header */}
        <div className="h-12 border-b border-slate-200/60 bg-white flex items-center px-4 gap-2 z-20">
