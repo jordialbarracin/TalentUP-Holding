@@ -17,8 +17,8 @@ function App() {
 
       {/* Premium Floating Navbar */}
       <nav className="fixed top-6 w-full z-50 transition-all duration-300">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="bg-white/80 backdrop-blur-xl border border-slate-200/60 rounded-full h-20 flex items-center justify-between px-6 shadow-sm">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <div className="bg-white/80 backdrop-blur-xl border border-slate-200/60 rounded-full h-20 flex items-center justify-between px-4 sm:px-6 shadow-sm">
             <Link to="/" className="cursor-pointer hover:scale-105 transition-transform inline-block">
                <Logo appName="" className="text-2xl" />
             </Link>

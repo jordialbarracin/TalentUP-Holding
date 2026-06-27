@@ -6,7 +6,7 @@ const AppSwitcher = () => {
     <div className="relative group cursor-pointer">
       <div className="flex items-center gap-2 hover:bg-slate-100/50 px-3 py-2 rounded-full transition-colors border border-transparent hover:border-slate-200/50">
         <Grid size={18} className="text-slate-600" />
-        <span className="text-sm font-bold text-slate-700">Módulos</span>
+        <span className="text-sm font-bold text-slate-700 hidden sm:inline">Módulos</span>
         <ChevronDown size={14} className="text-slate-400 group-hover:rotate-180 transition-transform" />
       </div>
       
