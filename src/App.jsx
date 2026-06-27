@@ -1,6 +1,7 @@
 import React from 'react';
 import { ArrowRight, Users, TrendingUp, Target, Newspaper, Layers, CheckCircle2, ChevronRight, PlayCircle } from 'lucide-react';
 import Logo from './components/ui/Logo';
+import AppSwitcher from './components/ui/AppSwitcher';
 
 function App() {
   return (
@@ -24,9 +25,12 @@ function App() {
              <a href="#vision" className="hover:text-slate-900 transition-colors">Nuestra Visión</a>
              <a href="#contacto" className="hover:text-slate-900 transition-colors">Compañía</a>
           </div>
-          <button className="bg-slate-900 text-white px-6 py-2.5 rounded-full text-sm font-bold hover:bg-slate-800 transition-all shadow-xl shadow-slate-900/20 hover:-translate-y-0.5">
-            Solicitar Demo
-          </button>
+          <div className="flex items-center gap-4">
+            <AppSwitcher />
+            <button className="hidden md:block bg-slate-900 text-white px-6 py-2.5 rounded-full text-sm font-bold hover:bg-slate-800 transition-all shadow-xl shadow-slate-900/20 hover:-translate-y-0.5">
+              Solicitar Demo
+            </button>
+          </div>
         </div>
       </nav>
 
