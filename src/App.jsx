@@ -159,7 +159,7 @@ function App() {
                <div className="flex items-center gap-3 mb-6">
                  <Logo appName="" className="text-2xl" />
                </div>
-               <p className="text-slate-500 text-lg max-w-sm leading-relaxed">El sistema operativo definitivo para escalar empresas modernas. Todo integrado, cero burocracia.</p>
+               <p className="text-slate-500 text-lg max-w-sm leading-relaxed">El portfolio de aplicaciones especializadas del Ecosistema TalentUP. Todo el ciclo de vida corporativo, cubierto.</p>
              </div>
              <div>
                 <h4 className="font-bold text-slate-900 mb-6 text-sm uppercase tracking-widest">Productos</h4>

@@ -14,7 +14,7 @@ const AppSwitcher = () => {
       <div className="absolute top-full right-0 mt-3 w-72 bg-white/95 backdrop-blur-2xl border border-slate-200 shadow-2xl rounded-3xl p-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 translate-y-3 group-hover:translate-y-0 z-50">
         
         <a href="https://talent-up-holding.vercel.app" className="flex items-center gap-4 p-3 hover:bg-slate-50 rounded-2xl transition-all mb-2 border border-transparent hover:border-slate-100 hover:shadow-sm group/main">
-          <div className="w-12 h-12 rounded-xl bg-gradient-to-tr from-brand-500 via-hr to-news flex items-center justify-center text-white font-black text-xl shadow-md group-hover/main:scale-105 transition-transform">
+          <div className="w-12 h-12 rounded-xl bg-gradient-to-tr from-[#2563eb] via-[#ec4899] to-[#f59e0b] flex items-center justify-center text-white font-black text-xl shadow-md group-hover/main:scale-105 transition-transform">
             UP
           </div>
           <div>
